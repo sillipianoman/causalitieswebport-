@@ -1,13 +1,14 @@
 ﻿{
+  "$schema": "https://vercel.sh",
   "headers": [
     {
-      "source": "/Build/(.*)\\.wasm\\.unityweb",
+      "source": "/(.*\\.wasm\\.unityweb)",
       "headers": [
         { "key": "Content-Type", "value": "application/wasm" }
       ]
     },
     {
-      "source": "/Build/(.*)\\.js\\.unityweb",
+      "source": "/(.*\\.js\\.unityweb)",
       "headers": [
         { "key": "Content-Type", "value": "application/javascript" }
       ]
